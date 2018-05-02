@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#cc66ff"
+    tools:context="com.example.alecxandramesquita.escala.LayoutTelaPerfil">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/TelaPerfilImagem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TelaPerfilTitulo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TelaPerfilTitulo"
+            app:srcCompat="@mipmap/ic_launcher_round"
+            tools:ignore="MissingConstraints" />
+
+
+        <Button
+            android:id="@+id/TelaPerfilbotaoEquipe"
+            android:layout_width="178dp"
+            android:layout_height="59dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="16dp"
+            android:onClick="Equipes"
+            android:text="Equipes"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+        <TextView
+            android:id="@+id/TelaPerfilNomeUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/TelaPerfilImagem"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="50dp"
+            android:text="Alecxandra Mesquita"
+            android:textColor="#000"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TelaPerfilImagem" />
+
+        <TextView
+            android:id="@+id/TelaPerfilTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Perfil Usuário"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/TelaPerfilImagem"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="251dp"
+            android:layout_height="37dp"
+            android:layout_marginBottom="32dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:text="Telefone: 99999-9999"
+            android:textColor="#000"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/TelaPerfilbotaoEquipe"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="160dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:text="Voluntário(a)"
+            android:textColor="#000"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TelaPerfilNomeUsuario" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

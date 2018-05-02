@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cc66ff"
+    tools:context="com.example.alecxandramesquita.escala.LayoutTelaEscala">
+
+    <TextView
+        android:id="@+id/TelaEscalaTitilo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/escalaLabel"
+        android:textColorLink="#0000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/TelaEscalaImagem"
+        android:layout_width="265dp"
+        android:layout_height="85dp"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TelaEscalaTitilo"
+        app:srcCompat="@drawable/centopeia" />
+
+    <Button
+        android:id="@+id/TelaEscalaBotaoVoltar"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="voltar"
+        android:text="Voltar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/Listar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/TelaEscalaBotaoVoltar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TelaEscalaImagem"
+        app:layout_constraintVertical_bias="0.423" />
+
+</android.support.constraint.ConstraintLayout>

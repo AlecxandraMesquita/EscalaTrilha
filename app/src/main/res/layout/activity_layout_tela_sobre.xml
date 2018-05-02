@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_purple"
+    tools:context=".LayoutTelaSobre">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/layoutTelaSobreTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Sobre"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.331"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/layoutTelaSobreTexto"
+            android:layout_width="321dp"
+            android:layout_height="391dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:text="O Sistema foi desenvolvido com o intuito de demonstrar as tecnicas utilizadas na disciplina de Dispositivos Moveis ministrada pelo professor Silvano, e contribuir com equipes que trabalham em regime de escala facilitando assim a consulta das escalas em um determinado período. Academica: Alecxandra Mesquita"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.51"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layoutTelaSobreTitulo" />
+
+        <Button
+            android:id="@+id/layoutTelaSobreVoltar"
+            android:layout_width="141dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="44dp"
+            android:onClick="voltar"
+            android:text="Voltar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layoutTelaSobreTexto" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

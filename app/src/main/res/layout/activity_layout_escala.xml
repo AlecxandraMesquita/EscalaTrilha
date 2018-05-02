@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <Button
+        android:id="@+id/layoutescalaData"
+        android:layout_width="253dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@android:color/transparent"
+        android:gravity="left"
+        android:onClick="dataEscala"
+        android:text="DataEscala"
+        android:textColor="@color/colorPrimary"
+        android:textColorLink="@color/colorPrimary"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+</android.support.constraint.ConstraintLayout>
