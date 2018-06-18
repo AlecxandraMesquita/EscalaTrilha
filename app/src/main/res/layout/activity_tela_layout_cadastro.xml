@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_purple"
+    tools:context=".Cadastro.TelaLayoutCadastro">
+
+
+    <TextView
+        android:id="@+id/TelaLayoutCadastroTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Selecione o Cadastro"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/TelaLayoutCadastroPessoa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/TelaLayoutCadastroPessoa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:onClick="pessoas"
+        android:text="Cadastrar Pessoa"
+        app:layout_constraintBottom_toTopOf="@+id/TelaLayoutCadastroEquipe"
+        tools:layout_editor_absoluteX="45dp" />
+
+    <Button
+        android:id="@+id/TelaLayoutCadastroEquipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:onClick="equipe"
+        android:text="Cadastrar Equpe"
+        app:layout_constraintBottom_toTopOf="@+id/TelaLayoutCadastroEscala"
+        tools:layout_editor_absoluteX="54dp" />
+
+    <Button
+        android:id="@+id/TelaLayoutCadastroEscala"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:onClick="escala"
+        android:text="Cadastrar Escala"
+        app:layout_constraintBottom_toTopOf="@+id/layoutTelaCadastroBotaoVoltar"
+        tools:layout_editor_absoluteX="54dp" />
+
+    <Button
+        android:id="@+id/layoutTelaCadastroBotaoVoltar"
+        android:layout_width="106dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="56dp"
+        android:layout_marginEnd="48dp"
+        android:onClick="voltar"
+        android:text="Voltar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

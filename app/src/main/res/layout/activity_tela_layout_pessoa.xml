@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_purple"
+    tools:context=".Cadastro.TelaLayoutPessoa">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/layoutTelaPessoaTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="31dp"
+            android:layout_marginStart="31dp"
+            android:text="Cadastro de Pessoa"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toTopOf="@+id/layoutTelaPessoaNome"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/layoutTelaPessoaSenha"
+            android:layout_width="276dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:layout_marginEnd="74dp"
+            android:layout_marginStart="16dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="Senha"
+            app:layout_constraintBottom_toTopOf="@+id/layoutTelaPessoaBotaoGravar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.833"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/layoutTelaPessoaEmail"
+            android:layout_width="276dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginEnd="74dp"
+            android:layout_marginStart="16dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            app:layout_constraintBottom_toTopOf="@+id/layoutTelaPessoaSenha"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.833"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/layoutTelaPessoaNome"
+            android:layout_width="276dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginEnd="74dp"
+            android:layout_marginStart="16dp"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/layoutTelaPessoaSobrenome"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/layoutTelaPessoaSobrenome"
+            android:layout_width="276dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginEnd="74dp"
+            android:layout_marginStart="16dp"
+            android:ems="10"
+            android:hint="Sobrenome"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/layoutTelaPessoaTelefone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/layoutTelaPessoaTelefone"
+            android:layout_width="276dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginEnd="74dp"
+            android:layout_marginStart="16dp"
+            android:ems="10"
+            android:hint="Telefone"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/layoutTelaPessoaEmail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <Button
+            android:id="@+id/layoutTelaPessoaBotaoGravar"
+            android:layout_width="112dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="28dp"
+            android:text="Gravar"
+            android:onClick="gravarPessoas"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <Button
+            android:id="@+id/layoutTelaPessoaBotaoVoltar"
+            android:layout_width="106dp"
+            android:layout_height="49dp"
+            android:layout_marginEnd="64dp"
+            android:onClick="voltar"
+            android:text="Voltar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

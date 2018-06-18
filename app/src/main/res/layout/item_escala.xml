@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cartaoPessoa"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#cc66ff"
+    android:layout_margin="5dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/item_card_escala"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/escala_cartao_nomePessoa"
+            android:layout_width="341dp"
+            android:layout_height="58dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="6dp"
+            android:maxLines="2"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Nome_Pessoa" />
+
+        <TextView
+            android:id="@+id/escala_cartao_nomeEquipe"
+            android:layout_width="337dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="22dp"
+            android:maxLines="2"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/escala_cartao_nomePessoa"
+            tools:text="Equipe" />
+
+        <TextView
+            android:id="@+id/escala_cartao_data"
+            android:layout_width="339dp"
+            android:layout_height="58dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="19dp"
+            android:maxLines="2"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/escala_cartao_nomeEquipe"
+            tools:text="Data" />
+
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>

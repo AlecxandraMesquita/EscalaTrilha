@@ -9,19 +9,30 @@
         android:roundIcon="@drawable/centopeia"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LayoutTelaLogin">
+        <activity android:name=".Cadastro.TelaLayoutPessoa" />
+        <activity android:name=".ListaNomes" />
+        <activity android:name=".Cadastro.TelaLayoutCadastro">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".Cadastro.TelaLayoutEquipe" />
+        <activity android:name=".Cadastro.TelaLayoutEscala" />
+        <activity android:name=".LayoutTelaSobre" />
+        <activity android:name=".LayoutTelaPerfil" />
+        <activity android:name=".TelaLayoutLogin">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LayoutTelaSobre"/>
-        <activity android:name=".LayoutTelaPerfil" />
-        <activity android:name=".TelaEquipes" />
-        <activity android:name=".LayoutTelaEscala" />
-        <activity android:name=".LayoutTelaVoluntarios" />
-
+        <activity android:name=".ListaEquipes" />
+        <activity android:name=".ListaEscala"></activity>
     </application>
 
 </manifest>

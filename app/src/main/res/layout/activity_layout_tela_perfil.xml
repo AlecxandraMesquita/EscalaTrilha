@@ -12,46 +12,77 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+        <!--xmlns:tools="http://schemas.android.com/tools"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:background="#cc66ff"-->
+        <!--tools:context="com.example.alecxandramesquita.escala.LayoutTelaPerfil">-->
+
+
         <ImageView
             android:id="@+id/TelaPerfilImagem"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="84dp"
             android:layout_below="@+id/TelaPerfilTitulo"
             android:layout_centerHorizontal="true"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="12dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/TelaPerfilTitulo"
-            app:srcCompat="@mipmap/ic_launcher_round"
+            app:srcCompat="@drawable/centopeia"
             tools:ignore="MissingConstraints" />
 
 
         <Button
             android:id="@+id/TelaPerfilbotaoEquipe"
-            android:layout_width="178dp"
-            android:layout_height="59dp"
+            android:layout_width="339dp"
+            android:layout_height="53dp"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginEnd="16dp"
-            android:onClick="Equipes"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:onClick="EquipeSelect"
             android:text="Equipes"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.517"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"/>
 
+
+        <Button
+            android:id="@+id/TelaPerfilbotaoEscala"
+            android:layout_width="338dp"
+            android:layout_height="47dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:onClick="Escalas"
+            android:text="Escala"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.363"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TelaPerfilNomeUsuario" />
 
         <TextView
             android:id="@+id/TelaPerfilNomeUsuario"
-            android:layout_width="wrap_content"
-            android:layout_height="37dp"
+            android:layout_width="247dp"
+            android:layout_height="32dp"
             android:layout_alignParentStart="true"
             android:layout_below="@+id/TelaPerfilImagem"
+            android:layout_marginEnd="8dp"
             android:layout_marginStart="24dp"
-            android:layout_marginTop="50dp"
-            android:text="Alecxandra Mesquita"
+            android:layout_marginTop="9dp"
+            android:text="Vadireto para Escala"
             android:textColor="#000"
             android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.58"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/TelaPerfilImagem" />
 
@@ -65,7 +96,7 @@
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
-            android:text="Perfil Usuário"
+            android:text="Ministério Trilhar"
             android:textSize="30sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/TelaPerfilImagem"
@@ -73,31 +104,88 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="251dp"
-            android:layout_height="37dp"
-            android:layout_marginBottom="32dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="16dp"
-            android:text="Telefone: 99999-9999"
-            android:textColor="#000"
-            android:textSize="24sp"
-            app:layout_constraintBottom_toTopOf="@+id/TelaPerfilbotaoEquipe"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="280dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:text="Conheça Nossas Equipes"
+        android:textColor="#000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TelaPerfilbotaoCadastrar" />
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="160dp"
+            android:layout_width="207dp"
             android:layout_height="33dp"
+            android:layout_marginEnd="8dp"
             android:layout_marginStart="24dp"
-            android:layout_marginTop="16dp"
-            android:text="Voluntário(a)"
+            android:layout_marginTop="4dp"
+            android:text="Tela de Cadastros"
             android:textColor="#000"
             android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.448"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/TelaPerfilNomeUsuario" />
+            app:layout_constraintTop_toBottomOf="@+id/TelaPerfilbotaoEscala" />
+
+        <Button
+            android:id="@+id/TelaPerfilbotaoCadastrar"
+            android:layout_width="332dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:onClick="cadastro"
+            android:text="Cadastrar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/TelaPerfilbotaoVoltar"
+        android:layout_width="163dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="4dp"
+        android:onClick="voltar"
+        android:text="Voltar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/TelaPerfilbotaoPessoa"
+            android:layout_width="334dp"
+            android:layout_height="46dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:onClick="pessoaSelect"
+            android:text="Pessoas"
+            app:layout_constraintBottom_toTopOf="@+id/TelaPerfilbotaoVoltar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.346"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:text="Conheça Nossos Voluntários"
+            android:textColor="#000"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TelaPerfilbotaoEquipe" />
 
 
     </android.support.constraint.ConstraintLayout>

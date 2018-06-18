@@ -5,15 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#cc66ff"
-    tools:context="com.example.alecxandramesquita.escala.TelaEquipes">
+    tools:context=".ListaEquipes">
 
     <TextView
-        android:id="@+id/TelaEquipesTitilo"
+        android:id="@+id/ListaNomeTitilo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:text="Equipes Trilhar"
+        android:text="Trilhar"
         android:textColorLink="#0000"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -22,20 +22,19 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/TelaEquipesImagem"
+        android:id="@+id/ListaNomeImagem"
         android:layout_width="265dp"
         android:layout_height="67dp"
-        android:layout_above="@+id/lista"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TelaEquipesTitilo"
+        app:layout_constraintTop_toBottomOf="@+id/ListaNomeTitilo"
         app:srcCompat="@drawable/centopeia" />
 
     <Button
-        android:id="@+id/TelaEquipesBotaoVoltar"
+        android:id="@+id/ListaNomeBotaoVoltar"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_marginBottom="8dp"
@@ -46,7 +45,7 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/lista"
+        android:id="@+id/listaEquipe"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_alignParentBottom="true"
@@ -55,8 +54,10 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/TelaEquipesBotaoVoltar"
+        app:layout_constraintBottom_toTopOf="@+id/ListaNomeBotaoVoltar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TelaEquipesImagem" />
+        app:layout_constraintTop_toBottomOf="@+id/ListaNomeImagem"
+        tools:listitem="@layout/item_equipe"/>
+
 </android.support.constraint.ConstraintLayout>

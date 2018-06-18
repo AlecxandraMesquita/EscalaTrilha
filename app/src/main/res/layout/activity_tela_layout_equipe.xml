@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_purple"
+    tools:context=".Cadastro.TelaLayoutEquipe">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/layoutTelaEquipeTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="31dp"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="32dp"
+            android:text="Cadastro de Equipe"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toTopOf="@+id/layoutTelaEquipeBotaoVoltar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.555"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.033" />
+
+
+        <EditText
+            android:id="@+id/layoutTelaEquipeNome"
+            android:layout_width="276dp"
+            android:layout_height="57dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="124dp"
+            android:ems="10"
+            android:hint="NameEquipe"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/layoutTelaEquipeBotaoGravar"
+            app:layout_constraintTop_toBottomOf="@+id/layoutTelaEquipeTitulo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/layoutTelaEquipeBotaoGravar"
+            android:layout_width="112dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="40dp"
+            android:onClick="gravarEquipes"
+            android:text="Gravar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <Button
+            android:id="@+id/layoutTelaEquipeBotaoVoltar"
+            android:layout_width="106dp"
+            android:layout_height="54dp"
+            android:layout_marginEnd="52dp"
+            android:onClick="voltar"
+            android:text="Voltar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
+
+

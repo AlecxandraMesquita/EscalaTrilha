@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cartaoPessoa"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#cc66ff"
+    android:layout_margin="5dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/item_card_atividade"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/pessoa_cartao_nome"
+            android:layout_width="341dp"
+            android:layout_height="58dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="6dp"
+            android:maxLines="2"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Nome" />
+
+        <TextView
+            android:id="@+id/pessoa_cartao_sobrenome"
+            android:layout_width="337dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="22dp"
+            android:maxLines="2"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pessoa_cartao_nome"
+            tools:text="Sobrenome" />
+
+        <TextView
+            android:id="@+id/pessoa_cartao_telefone"
+            android:layout_width="339dp"
+            android:layout_height="58dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="19dp"
+            android:maxLines="2"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pessoa_cartao_sobrenome"
+            tools:text="Telefone" />
+
+        <TextView
+            android:id="@+id/pessoa_cartao_email"
+            android:layout_width="335dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="22dp"
+            android:maxLines="2"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pessoa_cartao_telefone"
+            tools:text="E-mail" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>
